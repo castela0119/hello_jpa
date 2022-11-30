@@ -3,6 +3,7 @@ package org.example.hellojpa;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+// commit test 중
 @Entity
 public class Member {
 
