@@ -19,16 +19,15 @@ public class JpaMain {
 
         try {
             // 영속
-            Member member = new Member(200L, "member200");
-            em.persist(member);
+            Member member = em.find(Member.class, 150L);
+            member.setName("AAAAA");
 
-            // 트랜잭션에 커밋되기 전까지는 SQL을 볼 수 없으므로
-            // 쿼리를 미리 보고싶을때 em.flush() 사용해서 강제로 호출한다.
-            em.flush();
+            // detach() 하는 경우 더 이상 JPA에서 관리하지 않는다.
+            em.detach(member);
 
             System.out.println("============================");
 
-            // commit 으로 트랜젝션을 끝냄
+            // 그러면 트랜잭션을 commit 할때 아무일도 일어나지 않는다.
             tx.commit();
 
         } catch (Exception e) {
