@@ -18,11 +18,11 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Member member = new Member();
-            member.setId(2L);
-            member.setName("HelloB");
+            // 영속
+            Member member = em.find(Member.class, 150L);
+            member.setName("ZZZZZ");
 
-            em.persist(member);
+            System.out.println("======================");
 
             // commit 으로 트랜젝션을 끝냄
             tx.commit();
