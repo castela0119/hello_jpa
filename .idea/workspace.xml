@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="3.2 영속성 컨텍스트 2 - commit test 입니다.">
+    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="3.2 영속성 컨텍스트 2 - 엔티티 수정 (변경 감지)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669797779616</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3.2 영속성 컨텍스트 2 - 엔티티 수정 (변경 감지)">
+      <created>1669800065487</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669800065487</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +110,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="3.2 영속성 컨텍스트 2 - 영속성 엔티티의 쓰기 지연" />
     <MESSAGE value="3.2 영속성 컨텍스트 2 - commit test 입니다." />
-    <option name="LAST_COMMIT_MESSAGE" value="3.2 영속성 컨텍스트 2 - commit test 입니다." />
+    <MESSAGE value="3.2 영속성 컨텍스트 2 - 엔티티 수정 (변경 감지)" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.2 영속성 컨텍스트 2 - 엔티티 수정 (변경 감지)" />
   </component>
 </project>

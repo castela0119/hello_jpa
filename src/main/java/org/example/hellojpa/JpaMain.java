@@ -19,20 +19,22 @@ public class JpaMain {
 
         try {
             // 영속
-            Member member = em.find(Member.class, 150L);
-            member.setName("ZZZZZ");
+            Member member = new Member(200L, "member200");
+            em.persist(member);
 
-            System.out.println("======================");
+            // 트랜잭션에 커밋되기 전까지는 SQL을 볼 수 없으므로
+            // 쿼리를 미리 보고싶을때 em.flush() 사용해서 강제로 호출한다.
+            em.flush();
+
+            System.out.println("============================");
 
             // commit 으로 트랜젝션을 끝냄
             tx.commit();
 
         } catch (Exception e) {
-
             tx.rollback();
 
         } finally {
-
             // 사용을 다하고나면 EntityManager 를 꼭 닫아줘야 한다.
             em.close();
 
