@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="3.3 플러시">
+    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="3.4 준영속 상태">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +74,7 @@
       <workItem from="1669714747326" duration="3523000" />
       <workItem from="1669767948225" duration="1489000" />
       <workItem from="1669770279037" duration="4089000" />
+      <workItem from="1669854624013" duration="1644000" />
     </task>
     <task id="LOCAL-00001" summary="3.2 영속성 컨텍스트 2 - commit test 입니다.">
       <created>1669797779616</created>
@@ -96,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669806139571</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="3.4 준영속 상태">
+      <created>1669807002306</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669807002306</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +126,7 @@
     <MESSAGE value="3.2 영속성 컨텍스트 2 - commit test 입니다." />
     <MESSAGE value="3.2 영속성 컨텍스트 2 - 엔티티 수정 (변경 감지)" />
     <MESSAGE value="3.3 플러시" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.3 플러시" />
+    <MESSAGE value="3.4 준영속 상태" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.4 준영속 상태" />
   </component>
 </project>
