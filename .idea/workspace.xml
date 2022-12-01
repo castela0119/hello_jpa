@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="4.2 데이터베이스 스키마 자동 생성 - update 옵션">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/RoleType.java" afterDir="false" />
+    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="4.3 필드와 컬럼 매핑">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +80,7 @@
       <workItem from="1669714747326" duration="3523000" />
       <workItem from="1669767948225" duration="1489000" />
       <workItem from="1669770279037" duration="4089000" />
-      <workItem from="1669854624013" duration="7982000" />
+      <workItem from="1669854624013" duration="11093000" />
     </task>
     <task id="LOCAL-00001" summary="3.2 영속성 컨텍스트 2 - commit test 입니다.">
       <created>1669797779616</created>
@@ -126,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669862058298</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="4.3 필드와 컬럼 매핑">
+      <created>1669878329956</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669878329956</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +156,7 @@
     <MESSAGE value="3.4 준영속 상태" />
     <MESSAGE value="4.2 데이터베이스 스키마 자동 생성 - creat 옵션" />
     <MESSAGE value="4.2 데이터베이스 스키마 자동 생성 - update 옵션" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.2 데이터베이스 스키마 자동 생성 - update 옵션" />
+    <MESSAGE value="4.3 필드와 컬럼 매핑" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.3 필드와 컬럼 매핑" />
   </component>
 </project>
