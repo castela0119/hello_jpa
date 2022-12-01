@@ -18,14 +18,13 @@ public class JpaMain {
         tx.begin();
 
         try {
-            // 영속
-            Member member = em.find(Member.class, 150L);
-            member.setName("AAAAA");
-
-            // detach() 하는 경우 더 이상 JPA에서 관리하지 않는다.
-            em.detach(member);
-
-            System.out.println("============================");
+            Member member = new Member();
+            member.setId(1L);
+            member.setUsername("A");
+            member.setRoleType(RoleType.USER);
+    
+            // DB 에 저장
+            em.persist(member);
 
             // 그러면 트랜잭션을 commit 할때 아무일도 일어나지 않는다.
             tx.commit();
@@ -36,9 +35,7 @@ public class JpaMain {
         } finally {
             // 사용을 다하고나면 EntityManager 를 꼭 닫아줘야 한다.
             em.close();
-
         }
-
         // 전체 어플리케이션이 끝나면 EntitiyFactoryManager 까지 닫아주자.
         emf.close();
     }
