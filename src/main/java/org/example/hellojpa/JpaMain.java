@@ -18,15 +18,34 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Member member = new Member();
-            member.setUsername("C");
+            Member member1 = new Member();
+            member1.setUsername("A");
 
-            // DB 에 저장
-            em.persist(member);
+            Member member2 = new Member();
+            member1.setUsername("B");
 
-            // 그러면 트랜잭션을 commit 할때 아무일도 일어나지 않는다.
+            Member member3 = new Member();
+            member1.setUsername("C");
+
+            System.out.println("=================================");
+
+            // 처음 호출하면 DB SEQ 값은 1이 됨
+            // 어? 나는 DB 50개씩 쓴다고 셋팅되어있는데?
+
+            // 그래서 바로 두번째 호출하면 DB SEQ 값은 51이 됨
+
+            // 여기서 DB SEQ 값을 1, 51 까지 만들고
+            em.persist(member1);    // 여기서 부터 메모리에서(?) 호출
+            em.persist(member2);
+            em.persist(member3);
+
+            System.out.println("member1 = " + member1.getId());
+            System.out.println("member2 = " + member2.getId());
+            System.out.println("member3 = " + member3.getId());
+
+            System.out.println("=================================");
+
             tx.commit();
-
         } catch (Exception e) {
             tx.rollback();
 
