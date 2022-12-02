@@ -18,37 +18,25 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Member member1 = new Member();
-            member1.setUsername("A");
+            Team team = new Team();
+            team.setName("TeamA");
 
-            Member member2 = new Member();
-            member1.setUsername("B");
+            // em.persist() 하면 항상 id 에 값이 들어간다. (영속상태가되면 무조건 pk값이 셋팅되고 영속상태가 된다.)
+            em.persist(team);
 
-            Member member3 = new Member();
-            member1.setUsername("C");
+            Member member = new Member();
+            member.setUsername("member1");
+            member.setTeamId(team.getId());     // fixme - 이 부분이 객체지향스럽지 못하다.
+            em.persist(member);
 
-            System.out.println("=================================");
+            Member findMember = em.find(Member.class, member.getId());     // fixme - 조회할때도 객체지향스럽지 못하다.
 
-            // 처음 호출하면 DB SEQ 값은 1이 됨
-            // 어? 나는 DB 50개씩 쓴다고 셋팅되어있는데?
-
-            // 그래서 바로 두번째 호출하면 DB SEQ 값은 51이 됨
-
-            // 여기서 DB SEQ 값을 1, 51 까지 만들고
-            em.persist(member1);    // 여기서 부터 메모리에서(?) 호출
-            em.persist(member2);
-            em.persist(member3);
-
-            System.out.println("member1 = " + member1.getId());
-            System.out.println("member2 = " + member2.getId());
-            System.out.println("member3 = " + member3.getId());
-
-            System.out.println("=================================");
+            Long findTeamId = findMember.getTeamId();       // fixme - 연관관계가 없기때문에 DB를 통해 계속 물어봐야 한다.
+            Team findTeam = em.find(Team.class, findTeamId);
 
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
-
         } finally {
             // 사용을 다하고나면 EntityManager 를 꼭 닫아줘야 한다.
             em.close();
