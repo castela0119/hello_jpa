@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="4.4 기본 키 매핑 - SEQUENCE 전략">
+    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="4.4 기본 키 매핑 - TABLE 전략">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +80,8 @@
       <workItem from="1669714747326" duration="3523000" />
       <workItem from="1669767948225" duration="1489000" />
       <workItem from="1669770279037" duration="4089000" />
-      <workItem from="1669854624013" duration="12358000" />
+      <workItem from="1669854624013" duration="14253000" />
+      <workItem from="1669941006490" duration="1386000" />
     </task>
     <task id="LOCAL-00001" summary="3.2 영속성 컨텍스트 2 - commit test 입니다.">
       <created>1669797779616</created>
@@ -137,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669881555782</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="4.4 기본 키 매핑 - TABLE 전략">
+      <created>1669883838832</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669883838832</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +173,7 @@
     <MESSAGE value="4.2 데이터베이스 스키마 자동 생성 - update 옵션" />
     <MESSAGE value="4.3 필드와 컬럼 매핑" />
     <MESSAGE value="4.4 기본 키 매핑 - SEQUENCE 전략" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.4 기본 키 매핑 - SEQUENCE 전략" />
+    <MESSAGE value="4.4 기본 키 매핑 - TABLE 전략" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.4 기본 키 매핑 - TABLE 전략" />
   </component>
 </project>
