@@ -4,6 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import java.util.List;
 
 public class JpaMain {
     public static void main(String[] args) {
@@ -18,23 +19,30 @@ public class JpaMain {
         tx.begin();
 
         try {
+            // 저장
             Team team = new Team();
             team.setName("TeamA");
-
-            // em.persist() 하면 항상 id 에 값이 들어간다. (영속상태가되면 무조건 pk값이 셋팅되고 영속상태가 된다.)
             em.persist(team);
 
             Member member = new Member();
             member.setUsername("member1");
-            member.setTeamId(team.getId());     // fixme - 이 부분이 객체지향스럽지 못하다.
+            member.setTeam(team);
             em.persist(member);
 
-            Member findMember = em.find(Member.class, member.getId());     // fixme - 조회할때도 객체지향스럽지 못하다.
+            em.flush();
+            em.clear();
 
-            Long findTeamId = findMember.getTeamId();       // fixme - 연관관계가 없기때문에 DB를 통해 계속 물어봐야 한다.
-            Team findTeam = em.find(Team.class, findTeamId);
+            Member findMember = em.find(Member.class, member.getId());
+            List<Member> members = findMember.getTeam().getMembers();
+
+            for (Member m : members) {
+                System.out.println("m = " + m.getUsername());
+            }
+
+            findMember.getTeam().getName();
 
             tx.commit();
+
         } catch (Exception e) {
             tx.rollback();
         } finally {
