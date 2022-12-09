@@ -26,20 +26,26 @@ public class JpaMain {
 
             Member member = new Member();
             member.setUsername("member1");
-            member.setTeam(team);
             em.persist(member);
+
+            // team.getMembers().add(member);
+
+            team.addMember(member);
 
             em.flush();
             em.clear();
 
-            Member findMember = em.find(Member.class, member.getId());
-            List<Member> members = findMember.getTeam().getMembers();
+            // fixme - flush, clear 안하면 얘는 1차캐시에 조회된게 그대로 튀어나온다.
+            Team findTeam = em.find(Team.class, team.getId());
 
-            for (Member m : members) {
-                System.out.println("m = " + m.getUsername());
+            // fixme - 때문에 여기 컬렉션에는 값이 없다.
+            List<Member> members = findTeam.getMembers();
+
+            System.out.println("============================================");
+            for (Member member1 : members) {
+                System.out.println("m = " + member.getUsername());
             }
-
-            findMember.getTeam().getName();
+            System.out.println("============================================");
 
             tx.commit();
 
