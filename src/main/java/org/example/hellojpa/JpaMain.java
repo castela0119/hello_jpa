@@ -19,33 +19,20 @@ public class JpaMain {
         tx.begin();
 
         try {
-            // 저장
-            Team team = new Team();
-            team.setName("TeamA");
-            em.persist(team);
 
-            Member member = new Member();
-            member.setUsername("member1");
-            em.persist(member);
+            Movie movie = new Movie();
+            movie.setDirector("aaaa");
+            movie.setActor("bbbb");
+            movie.setName("바람과함께사라지다");
+            movie.setPrice(10000);
 
-            // team.getMembers().add(member);
-
-            team.addMember(member);
+            em.persist(movie);
 
             em.flush();
             em.clear();
 
-            // fixme - flush, clear 안하면 얘는 1차캐시에 조회된게 그대로 튀어나온다.
-            Team findTeam = em.find(Team.class, team.getId());
-
-            // fixme - 때문에 여기 컬렉션에는 값이 없다.
-            List<Member> members = findTeam.getMembers();
-
-            System.out.println("============================================");
-            for (Member member1 : members) {
-                System.out.println("m = " + member.getUsername());
-            }
-            System.out.println("============================================");
+            Movie findMovie = em.find(Movie.class, movie.getId());
+            System.out.println("findMovie = " + findMovie);
 
             tx.commit();
 
