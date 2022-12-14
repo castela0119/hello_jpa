@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="7.1 상속관계 매핑 - (2) 조인 전략">
+    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="7.1 상속관계 매핑 - (3) 구현 클래스마다 테이블 전략">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/BaseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Team.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +91,8 @@
       <workItem from="1670464587032" duration="8605000" />
       <workItem from="1670545186507" duration="3420000" />
       <workItem from="1670807146091" duration="8707000" />
-      <workItem from="1670911740767" duration="9489000" />
+      <workItem from="1670911740767" duration="11036000" />
+      <workItem from="1670978463191" duration="2244000" />
     </task>
     <task id="LOCAL-00001" summary="3.2 영속성 컨텍스트 2 - commit test 입니다.">
       <created>1669797779616</created>
@@ -182,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670920370877</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="7.1 상속관계 매핑 - (3) 구현 클래스마다 테이블 전략">
+      <created>1670929830114</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670929830114</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +224,7 @@
     <MESSAGE value="5.2 양방향 연관관계와 연관관계의 주인1 - 기본" />
     <MESSAGE value="7.1 상속관계 매핑 - (1) 단일 테이블 전략" />
     <MESSAGE value="7.1 상속관계 매핑 - (2) 조인 전략" />
-    <option name="LAST_COMMIT_MESSAGE" value="7.1 상속관계 매핑 - (2) 조인 전략" />
+    <MESSAGE value="7.1 상속관계 매핑 - (3) 구현 클래스마다 테이블 전략" />
+    <option name="LAST_COMMIT_MESSAGE" value="7.1 상속관계 매핑 - (3) 구현 클래스마다 테이블 전략" />
   </component>
 </project>
