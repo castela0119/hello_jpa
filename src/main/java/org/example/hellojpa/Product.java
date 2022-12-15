@@ -16,7 +16,7 @@ public class Product {
 
     private String name;
 
-    @ManyToMany(mappedBy = "products")
+    @ManyToMany
     private List<Member> members = new ArrayList<>();
 
     public Long getId() {
