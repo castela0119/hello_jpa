@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="8.3 영속성 전이(CASCADE)와 고아 객체">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Period.java" afterDir="false" />
+    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="9.2 임베디드 타입">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +94,7 @@
       <workItem from="1670992692081" duration="7272000" />
       <workItem from="1671063592486" duration="1891000" />
       <workItem from="1671065525922" duration="8214000" />
-      <workItem from="1671149857302" duration="4021000" />
+      <workItem from="1671149857302" duration="8187000" />
     </task>
     <task id="LOCAL-00001" summary="3.2 영속성 컨텍스트 2 - commit test 입니다.">
       <created>1669797779616</created>
@@ -217,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671088154207</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="9.2 임베디드 타입">
+      <created>1671156587980</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1671156587980</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +258,7 @@
     <MESSAGE value="7.2 Mapped Superclass - 매핑 정보 상속" />
     <MESSAGE value="8.2 즉시 로딩과 지연 로딩" />
     <MESSAGE value="8.3 영속성 전이(CASCADE)와 고아 객체" />
-    <option name="LAST_COMMIT_MESSAGE" value="8.3 영속성 전이(CASCADE)와 고아 객체" />
+    <MESSAGE value="9.2 임베디드 타입" />
+    <option name="LAST_COMMIT_MESSAGE" value="9.2 임베디드 타입" />
   </component>
 </project>
