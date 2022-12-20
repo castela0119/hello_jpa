@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="10.1 소개 - (1) JQPL">
+    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="10.1 소개 - (2) Criteria">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +96,7 @@
       <workItem from="1671065525922" duration="8214000" />
       <workItem from="1671149857302" duration="15208000" />
       <workItem from="1671409462262" duration="9340000" />
-      <workItem from="1671497005146" duration="2182000" />
+      <workItem from="1671497005146" duration="3230000" />
     </task>
     <task id="LOCAL-00001" summary="3.2 영속성 컨텍스트 2 - commit test 입니다.">
       <created>1669797779616</created>
@@ -267,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671498033762</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="10.1 소개 - (2) Criteria">
+      <created>1671499345158</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1671499345158</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +291,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="3.2 영속성 컨텍스트 2 - 영속성 엔티티의 쓰기 지연" />
     <MESSAGE value="3.2 영속성 컨텍스트 2 - commit test 입니다." />
     <MESSAGE value="3.2 영속성 컨텍스트 2 - 엔티티 수정 (변경 감지)" />
     <MESSAGE value="3.3 플러시" />
@@ -310,6 +315,7 @@
     <MESSAGE value="9.5 값 타입 컬렉션 - (2) 조회" />
     <MESSAGE value="9.5 값 타입 컬렉션 - (3) 수정" />
     <MESSAGE value="10.1 소개 - (1) JQPL" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.1 소개 - (1) JQPL" />
+    <MESSAGE value="10.1 소개 - (2) Criteria" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.1 소개 - (2) Criteria" />
   </component>
 </project>
