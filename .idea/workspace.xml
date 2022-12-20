@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="9.5 값 타입 컬렉션 - (3) 수정">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0aa8c4b7-e725-4204-82ef-857b62478f3f" name="Changes" comment="10.1 소개 - (1) JQPL">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hellojpa/JpaMain.java" afterDir="false" />
     </list>
@@ -36,17 +35,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.hellojpa" />
@@ -99,7 +97,7 @@
       <workItem from="1671065525922" duration="8214000" />
       <workItem from="1671149857302" duration="15208000" />
       <workItem from="1671409462262" duration="9340000" />
-      <workItem from="1671497005146" duration="922000" />
+      <workItem from="1671497005146" duration="2182000" />
     </task>
     <task id="LOCAL-00001" summary="3.2 영속성 컨텍스트 2 - commit test 입니다.">
       <created>1669797779616</created>
@@ -262,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671425416868</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="10.1 소개 - (1) JQPL">
+      <created>1671498033762</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1671498033762</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +309,7 @@
     <MESSAGE value="9.5 값 타입 컬렉션 - (1) 저장" />
     <MESSAGE value="9.5 값 타입 컬렉션 - (2) 조회" />
     <MESSAGE value="9.5 값 타입 컬렉션 - (3) 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="9.5 값 타입 컬렉션 - (3) 수정" />
+    <MESSAGE value="10.1 소개 - (1) JQPL" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.1 소개 - (1) JQPL" />
   </component>
 </project>
